@@ -30,10 +30,8 @@ to compile the library you need
 - cmake
 - m4ri (only for comparison with SAGE, http://m4ri.sagemath.org/)
 
-to compile library
+to compile library open makefile and edit if needed then
 
-cd cmake
-cmake ..
 make
 
 a number of test to check library is now compiled, run and enjoy.
