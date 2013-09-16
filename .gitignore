@@ -1,0 +1,106 @@
+*~
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.framework
+*.bundle
+*.mexmaci*
+*.tar.gz
+*.tgz
+*.bak
+*.mla
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.a
+
+# Compiled Dynamic libraries
+*.so
+
+# WINDOWS specific binary
+*.dll
+*.obj
+*.lib
+*.exe
+*.pdb
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.pkg
+
+# Logs and databases #
+######################
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# latex noise
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.maf
+*.mtc
+*.mtc0
+
+*.xcodeproj
+test_n*
+no_git/
+
+# Doxygen Generated
+DoxygenDoc/
+doc/
+
+# auto git version noise
+InfoPlist.h
+ 
+# old skool
+.svn
+ 
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
