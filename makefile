@@ -76,6 +76,7 @@ all: libGF2toolkit.a
 	$(CXX) $(CFLAGS) $(INC) -o test_n8  tests/test_n8_timeLinv.cc $(LIBS)
 	$(CXX) $(CFLAGS) $(INC) -o test_n9  tests/test_n9_LUdecomposition.cc $(LIBS)
 	$(CXX) $(CFLAGS) $(INC) -o test_n10 tests/test_n10_RankComputationTimeComparison.cc $(LIBS)
+	$(CXX) $(CFLAGS) $(INC) -o testRankComputation tests/testRankComputation.cc $(LIBS)
 
 srcs/%.o: srcs/%.cc $(DEPS)
 	$(CXX) $(CFLAGS) $(INC) -c $< -o $@ 
