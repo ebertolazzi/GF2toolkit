@@ -57,9 +57,9 @@ srcs/TimeMeter.hh
 CC     = gcc
 CXX    = g++
 
-INC    = -Isrcs -I/usr/local/include
+INC    = -Isrcs -I/usr/local/include -Isubmodules/m4ri
 CFLAGS = -Wall -O2 -funroll-loops -msse3 -msse2 -msse -mmmx -m64 -fPIC 
-LIBS   = -L. -lGF2toolkit -lm4ri
+LIBS   = -L. -lGF2toolkit submodules/m4ri/.libs/libm4ri.a 
 
 #AR     = ar rcs
 AR     = libtool -static -o 
@@ -77,6 +77,20 @@ all: libGF2toolkit.a
 	$(CXX) $(CFLAGS) $(INC) -o test_n9  tests/test_n9_LUdecomposition.cc $(LIBS)
 	$(CXX) $(CFLAGS) $(INC) -o test_n10 tests/test_n10_RankComputationTimeComparison.cc $(LIBS)
 	$(CXX) $(CFLAGS) $(INC) -o testRankComputation tests/testRankComputation.cc $(LIBS)
+
+run:
+	./test_n1
+	./test_n2
+	./test_n3
+	./test_n4
+	./test_n4b
+	./test_n5
+	./test_n6
+	./test_n7
+	./test_n8
+	./test_n9
+	./test_n10
+	./testRankComputation
 
 srcs/%.o: srcs/%.cc $(DEPS)
 	$(CXX) $(CFLAGS) $(INC) -c $< -o $@ 

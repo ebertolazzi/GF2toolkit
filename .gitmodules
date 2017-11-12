@@ -1,0 +1,3 @@
+[submodule "submodules/m4ri"]
+	path = submodules/m4ri
+	url = https://bitbucket.org/malb/m4ri.git
